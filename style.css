@@ -1,0 +1,144 @@
+@font-face {
+  font-family: fa;
+  src: url('Poppins-Regular.ttf');
+}
+
+* {
+  font-family: fa;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* Navigation Bar */
+
+ul {
+  background-color: aquamarine;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: rgb(0, 0, 0);
+  background-color: #40f0b5;
+  transition: .2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #54ac8f;
+  color: white;
+  transition: .2s;
+}
+
+/* Words Box */
+
+.lang-container {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 40px 60px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.lang-container h2 {
+  font-size: 40px;
+}
+
+.lang-container em {
+  font-size: 18px;
+}
+
+.lang {
+  display: flex;
+  text-align: center;
+}
+
+.lang h3 {
+  font-size: 24px;
+}
+
+.child-lang {
+  flex: 1;
+  margin: 12px;
+}
+
+.child-lang em {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+/* article .history {
+    color: black;
+    margin: 16px;
+    padding: 12px;
+    text-align: left;
+    border: 3px solid black;
+    background-color: rgb(122, 238, 199);
+} */
+
+.counter {
+  padding: 40px 40px 40px 40px;
+  text-align: center;
+  background-color: rgb(182, 255, 231);
+}
+
+/* History Box */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-container {
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 12px 16px;
+  padding: 14px;
+  flex: 0 0 calc(50% - 32px);
+}
+
+/* Footer */
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: aquamarine;
+  width: 100%;
+  font-weight: 600;
+}
+
+/* .content {
+    flex: 1;
+    padding: 12px;
+}
+
+.child-content {
+    flex: 1;
+    margin: 12px;
+} */
+
+@media screen and (max-width: 600px) {
+
+  .lang,
+  .content {
+    flex-direction: column;
+  }
+}
